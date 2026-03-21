@@ -105,7 +105,11 @@ router.post('/signup', async (req, res) => {
             const ordinalPosition = getOrdinalSuffix(existingUser.position);
             return res.status(200).json({
                 message: `You have already signed up and are on the waitlist. You are currently ${ordinalPosition} on the waitlist.`,
-                emailSent: false // No email sent for existing users
+                position: existingUser.position,
+                userId: existingUser.userId,
+                isApproved: false,
+                hasProAccess: existingUser.hasProAccess,
+                emailSent: false,
             });
         }
         // Optimize position calculation using countDocuments with no conditions
