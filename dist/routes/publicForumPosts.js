@@ -1423,6 +1423,11 @@ const SPLASH_PAGE_FORUMS = {
         title: "Beginner Help Thread",
         gameTitle: "Coffee Talk"
     },
+    kirbyforgottenlandmoddingtoolds: {
+        forumId: "forum_1770660000959_m6a7j6u94",
+        title: "Modding Tools & Setup",
+        gameTitle: "Kirby and the Forgotten Land"
+    },
     pacmanworld2anypercent: {
         forumId: "forum_1770660006326_0udfs7hdg",
         title: "Any% Route & Strats",
@@ -1497,6 +1502,411 @@ const SPLASH_PAGE_FORUMS = {
         forumId: "forum_1770842700044_nkewp17lm",
         title: "Mechanics & Strategies",
         gameTitle: "Batman: Arkham Asylum"
+    },
+    supermariogalaxyoptimalroutes: {
+        forumId: "forum_1770901200058_kk1xdpzu0",
+        title: "Optimal Playthroughs & Routes",
+        gameTitle: "Super Mario Galaxy"
+    },
+    freefiregameplaytips: {
+        forumId: "forum_1770901212858_2ns157ke5",
+        title: "Gameplay Tips & Tech",
+        gameTitle: "Free Fire"
+    },
+    subnauticsbeginner: {
+        forumId: "forum_1770904800090_au47h3oio",
+        title: "Beginner Questions",
+        gameTitle: "Subnautica"
+    },
+    nb2k20gameplaytech: {
+        forumId: "forum_1770915600040_besmdnhsj",
+        title: "Gameplay Tips & Tech",
+        gameTitle: "NBA 2K20"
+    },
+    candenceofhyruletips: {
+        forumId: "forum_1770919202122_py4iew4dc",
+        title: "Tips and Discoveries",
+        gameTitle: "Cadence of Hyrule: Crypt of the NecroDancer Featuring The Legend of Zelda"
+    },
+    subnauticahottakes: {
+        forumId: "forum_1770919207530_6xs15md2r",
+        title: "Hot Takes & Opinions",
+        gameTitle: "Subnautica"
+    },
+    residentevil7beginnerhelp: {
+        forumId: "forum_1770921000040_ksr89a8cm",
+        title: "Beginner Help Thread",
+        gameTitle: "Resident Evil 7: Biohazard"
+    },
+    mariogolfworkarounds: {
+        forumId: "forum_1770929100170_um2q720ph",
+        title: "Fixes & Workarounds",
+        gameTitle: "Mario Golf"
+    },
+    nba2k11tipsanddiscoveries: {
+        forumId: "forum_1770987601600_zo8u5rg7p",
+        title: "Tips and Discoveries",
+        gameTitle: "NBA 2K11"
+    },
+    amongusfavmoments: {
+        forumId: "forum_1770987608965_nmcn4bbuu",
+        title: "Favorite Moments",
+        gameTitle: "Among Us"
+    },
+    valheimoptimalroutes: {
+        forumId: "forum_1771002000066_6aczkbvlf",
+        title: "Optimal Playthroughs & Routes",
+        gameTitle: "Valheim"
+    },
+    tetriss99tipsanddiscoveries: {
+        forumId: "forum_1771005601021_kqftdqzty",
+        title: "Tips and Discoveries",
+        gameTitle: "Tetris 99"
+    },
+    pacmanworld2mods: {
+        forumId: "forum_1771005618915_sc81dqr4i",
+        title: "Mods",
+        gameTitle: "Pac-Man World 2"
+    },
+    pokemonmysterydungeonexplorersofskyspoilers: {
+        forumId: "forum_1771015501150_0tt504eji",
+        title: "Spoilers and Discussion",
+        gameTitle: "Pokemon Mystery Dungeon: Explorers of Sky"
+    },
+    powerwashsimulatorhelptroubleshooting: {
+        forumId: "forum_1771074004621_mfoti5x21",
+        title: "Help & Troubleshooting",
+        gameTitle: "PowerWash Simulator"
+    },
+    zoneoftheenders2ndrunnerbuilds: {
+        forumId: "forum_1771077600068_uccjb5jcp",
+        title: "Builds / Loadouts / Setups",
+        gameTitle: "Zone of the Enders: The 2nd Runner"
+    },
+    danganronpa2modinstallation: {
+        forumId: "forum_1771088401461_x1uo0fpqr",
+        title: "Mod Installation & Compatibility",
+        gameTitle: "Danganronpa 2: Goodbye Despair"
+    },
+    uncharted3spoilers: {
+        forumId: "forum_1771092001192_r6ru13gh4",
+        title: "Spoilers and Discussion",
+        gameTitle: "Uncharted 3: Drake's Deception"
+    },
+    diablo4gameplaytips: {
+        forumId: "forum_1771092005728_y9a7wa2mk",
+        title: "Gameplay Tips & Tech",
+        gameTitle: "Diablo IV"
+    },
+    oriandthewillofthewispsfavmoments: {
+        forumId: "forum_1771101900988_zajz1rntx",
+        title: "Favorite Moments",
+        gameTitle: "Ori and the Will of the Wisps"
+    },
+    teamfotress2anypercentroutes: {
+        forumId: "forum_1771160400040_l5wyzqust",
+        title: "Any% Route & Strats",
+        gameTitle: "Team Fortress 2"
+    },
+    hadesfixesworkarounds: {
+        forumId: "forum_1771164000118_plun1vf38",
+        title: "Fixes & Workarounds",
+        gameTitle: "Hades"
+    },
+    minecraftspoilers: {
+        forumId: "forum_1771174801598_88aycatcs",
+        title: "Spoilers and Discussion",
+        gameTitle: "Minecraft"
+    },
+    tetris99buildssetups: {
+        forumId: "forum_1771178400039_i7zu0ancw",
+        title: "Builds / Loadouts / Setups",
+        gameTitle: "Tetris 99"
+    },
+    jetsetradiotipsdiscoveries: {
+        forumId: "forum_1771178405419_qyn9uc3sq",
+        title: "Tips and Discoveries",
+        gameTitle: "Jet Set Radio"
+    },
+    finalfightworldrecord: {
+        forumId: "forum_1771246817153_siz0yrwu8",
+        title: "World Record Discussion",
+        gameTitle: "Final Fight"
+    },
+    phasmaphobiahelptroubleshooting: {
+        forumId: "forum_1771250400041_ayso1rvgo",
+        title: "Help & Troubleshooting",
+        gameTitle: "Phasmophobia"
+    },
+    supersmashbrosultimatecharactersandstory: {
+        forumId: "forum_1771264801594_ay7x6qi0p",
+        title: "Characters & Story Talk",
+        gameTitle: "Super Smash Bros. Ultimate"
+    },
+    starwarsknightsoftheoldrepublic2builds: {
+        forumId: "forum_1771264807898_hv5tzec1a",
+        title: "Builds / Loadouts / Setups",
+        gameTitle: "Star Wars Knights of the Old Republic II: The Sith Lords"
+    },
+    godofwarragnarokmods: {
+        forumId: "forum_1771266600963_zlo26z72z",
+        title: "Mods",
+        gameTitle: "God of War Ragnarök"
+    },
+    legendofzeldaocarinaoftimemovementtech: {
+        forumId: "forum_1771274700059_cvrzqt95b",
+        title: "Movement Tech & Shortcuts",
+        gameTitle: "The Legend of Zelda: Ocarina of Time"
+    },
+    blueprincespoilers: {
+        forumId: "forum_1771333200972_4zvtqlma2",
+        title: "Spoilers and Discussion",
+        gameTitle: "Blue Prince"
+    },
+    soulcalibur2favmoments: {
+        forumId: "forum_1771333215091_su7dcy9i8",
+        title: "Favorite Moments",
+        gameTitle: "Soulcalibur II"
+    },
+    fzerogxfavmoments: {
+        forumId: "forum_1771347601173_1lgfdd1fw",
+        title: "Favorite Moments",
+        gameTitle: "F-Zero GX"
+    },
+    duneawakeningtipsdiscoveries: {
+        forumId: "forum_1771351201453_p9f8o0j97",
+        title: "Tips and Discoveries",
+        gameTitle: "Dune: Awakening"
+    },
+    papermariothethousandyeardoorhottakes: {
+        forumId: "forum_1771351216661_bg1i3cadg",
+        title: "Hot Takes & Opinions",
+        gameTitle: "Paper Mario: The Thousand Year Door"
+    },
+    kirbyforgottenlandgameplaytips: {
+        forumId: "forum_1771353000037_79s6ka1gi",
+        title: "Gameplay Tips & Tech",
+        gameTitle: "Kirby and the Forgotten Land"
+    },
+    aplaguetalerequimbeginnerquestions: {
+        forumId: "forum_1771419600041_972f6p4j2",
+        title: "Beginner Questions",
+        gameTitle: "A Plague Tale: Requiem"
+    },
+    diablo4tipsdiscoveries: {
+        forumId: "forum_1771419606837_tmv34xw0h",
+        title: "Tips and Discoveries",
+        gameTitle: "Diablo IV"
+    },
+    xenobladechroniclesdefinitivebuilds: {
+        forumId: "forum_1771423200062_m45zbwzgj",
+        title: "Builds / Loadouts / Setups",
+        gameTitle: "Xenoblade Chronicles: Definitive Edition"
+    },
+    genshinimpacttipsdiscoveries: {
+        forumId: "forum_1771437601109_t8z0g2725",
+        title: "Tips and Discoveries",
+        gameTitle: "Genshin Impact"
+    },
+    pacmanworld2gameplaytips: {
+        forumId: "forum_1771437616602_cdtcreou0",
+        title: "Gameplay Tips & Tech",
+        gameTitle: "Pac-Man World 2"
+    },
+    starfox64gameplayoverhaul: {
+        forumId: "forum_1771439400763_de2odf5b4",
+        title: "Gameplay Overhauls",
+        gameTitle: "Star Fox 64"
+    },
+    markoftheninjaspoilers: {
+        forumId: "forum_1771447501083_jzz4f74za",
+        title: "Spoilers and Discussion",
+        gameTitle: "Mark of the Ninja"
+    },
+    discoelysiumanypercentroutes: {
+        forumId: "forum_1771506000053_q7x56e08v",
+        title: "Any% Route & Strats",
+        gameTitle: "Disco Elysium"
+    },
+    hatofulboyfriendstuckask: {
+        forumId: "forum_1771506016143_nfbgow55i",
+        title: "Stuck? Ask Here",
+        gameTitle: "Hatoful Boyfriend"
+    },
+    citiesskylinestipsdiscoveries: {
+        forumId: "forum_1771509601099_xsicw6nmy",
+        title: "Tips and Discoveries",
+        gameTitle: "Cities: Skylines"
+    },
+    dragonquest5needtips: {
+        forumId: "forum_1771520400126_50xb1m4ee",
+        title: "Need Tips / Advice",
+        gameTitle: "Dragon Quest V: Hand of the Heavenly Bride"
+    },
+    sakurawars2019favmoments: {
+        forumId: "forum_1771524002114_2ja5z0ihs",
+        title: "Favorite Moments",
+        gameTitle: "Sakura Wars (2019)"
+    },
+    conkursbadfurdaymechanics: {
+        forumId: "forum_1771525800110_fb104e04m",
+        title: "Mechanics & Strategies",
+        gameTitle: "Conkur's Bad Fur Day"
+    },
+    supermariogalaxybuildssetups: {
+        forumId: "forum_1771533900192_4kkrky7ex",
+        title: "Builds / Loadouts / Setups",
+        gameTitle: "Super Mario Galaxy"
+    },
+    borderlands3mods: {
+        forumId: "forum_1771592406283_n436kagty",
+        title: "Mods",
+        gameTitle: "Borderlands 3"
+    },
+    mariosuperstarbaseballoptimalroutes: {
+        forumId: "forum_1771596000123_54l4w2ikc",
+        title: "Optimal Playthroughs & Routes",
+        gameTitle: "Mario Superstar Baseball"
+    },
+    portal2beginnerquestions: {
+        forumId: "forum_1771606800140_1i5hgf16c",
+        title: "Beginner Questions",
+        gameTitle: "Portal 2"
+    },
+    nomansskytimingwindows: {
+        forumId: "forum_1771610400059_uic853vdc",
+        title: "Timing Windows & Cycles",
+        gameTitle: "No Man's Sky"
+    },
+    mariogolftipsdiscoveries: {
+        forumId: "forum_1771610408329_kq5u071v3",
+        title: "Tips and Discoveries",
+        gameTitle: "Mario Golf"
+    },
+    megamanxtexturemods: {
+        forumId: "forum_1771612201315_rq5fsum1y",
+        title: "Graphics / Texture Mods",
+        gameTitle: "Megaman X (1993)"
+    },
+    crashbandicoot4mods: {
+        forumId: "forum_1771620300955_e9bo1xi4k",
+        title: "Mods",
+        gameTitle: "Crash Bandicoot 4: It's About Time"
+    },
+    sinandpunishmenthottakes: {
+        forumId: "forum_1771678801214_12230qj13",
+        title: "Hot Takes & Opinions",
+        gameTitle: "Sin & Punishment"
+    },
+    palworldstuckaskhere: {
+        forumId: "forum_1771678805649_lb5juqgjm",
+        title: "Stuck? Ask Here",
+        gameTitle: "Palworld"
+    },
+    dokidokiliteratureclubgameplayoverhaul: {
+        forumId: "forum_1771682401006_agmd3s3qe",
+        title: "Gameplay Overhauls",
+        gameTitle: "Doki Doki Literature Club"
+    },
+    starfox64advancedtech: {
+        forumId: "forum_1771696800042_ea9f28qp6",
+        title: "Advanced Techniques",
+        gameTitle: "Star Fox 64"
+    },
+    supermariostrikersbeginnerquestions: {
+        forumId: "forum_1771696805060_b54d68vnd",
+        title: "Beginner Questions",
+        gameTitle: "Super Mario Strikers"
+    },
+    yakuza2005personalbest: {
+        forumId: "forum_1771698600033_fhqmqezgm",
+        title: "PB Progress & Consistency",
+        gameTitle: "Yakuza (2005)"
+    },
+    shantaeandthepiratescursebuilds: {
+        forumId: "forum_1771706700066_8o9b5unwv",
+        title: "Builds / Loadouts / Setups",
+        gameTitle: "Shantae and the Pirate's Curse"
+    },
+    hollowknighthelptroubleshooting: {
+        forumId: "forum_1771765200120_q9xom1hrb",
+        title: "Help & Troubleshooting",
+        gameTitle: "Hollow Knight"
+    },
+    supermariomaker2beginnerhelpthread: {
+        forumId: "forum_1771779600035_8kkdy8fm8",
+        title: "Beginner Help Thread",
+        gameTitle: "Super Mario Maker 2"
+    },
+    megamanxtipsdiscoveries: {
+        forumId: "forum_1771783201129_9cueszlf4",
+        title: "Tips and Discoveries",
+        gameTitle: "Megaman X (1993)"
+    },
+    borderlands3mechanicsstrategies: {
+        forumId: "forum_1771783204554_5a56mzpr3",
+        title: "Mechanics & Strategies",
+        gameTitle: "Borderlands 3"
+    },
+    dokidokiliteratureclubbeginnerquestions: {
+        forumId: "forum_1771785000035_284uea16z",
+        title: "Beginner Questions",
+        gameTitle: "Doki Doki Literature Club"
+    },
+    riskofrain2beginnerhelpthread: {
+        forumId: "forum_1771851606356_ntlsihswj",
+        title: "Beginner Help Thread",
+        gameTitle: "Risk of Rain 2"
+    },
+    haloinfinitemechsstrategies: {
+        forumId: "forum_1771855200224_qbsv7epep",
+        title: "Mechanics & Strategies",
+        gameTitle: "Halo Infinite"
+    },
+    metalgearsolidadvancedtech: {
+        forumId: "forum_1771869609837_oqunl9vb2",
+        title: "Advanced Techniques",
+        gameTitle: "Metal Gear Solid"
+    },
+    oriandthewillofthewispsmovementtech: {
+        forumId: "forum_1771871400045_js4a37jww",
+        title: "Movement Tech & Shortcuts",
+        gameTitle: "Ori and the Will of the Wisps"
+    },
+    dragonquest3hd2dremakemovementtech: {
+        forumId: "forum_1771879500064_anvm8wfkc",
+        title: "Movement Tech & Shortcuts",
+        gameTitle: "Dragon Quest III HD-2D Remake"
+    },
+    kirbyforgottenlandcharactersandstory: {
+        forumId: "forum_1771938000957_slzyxi9dm",
+        title: "Characters & Story Talk",
+        gameTitle: "Kirby and the Forgotten Land"
+    },
+    finalfantasyviadvancedtech: {
+        forumId: "forum_1771938006597_zyo99ajyh",
+        title: "Advanced Techniques",
+        gameTitle: "Final Fantasy VI"
+    },
+    assassinscreedodysseyfavmoment: {
+        forumId: "forum_1771941601309_7phdudo02",
+        title: "Favorite Moments",
+        gameTitle: "Assassin's Creed: Odyssey"
+    },
+    aplaguetalrequiemneedtips: {
+        forumId: "forum_1771952400029_0248soxxx",
+        title: "Need Tips / Advice",
+        gameTitle: "A Plague Tale: Requiem"
+    },
+    danganronpa2advancedtech: {
+        forumId: "forum_1771956000078_qzj1p0wtq",
+        title: "Advanced Techniques",
+        gameTitle: "Danganronpa 2: Goodbye Despair"
+    },
+    mlbslugfest2003mechanics: {
+        forumId: "forum_1771956008043_e22go5ur8",
+        title: "Mechanics & Strategies",
+        gameTitle: "MLB Slugfest 2003"
     }
 };
 // Default forum (Xenoblade Chronicles 3) for backward compatibility
