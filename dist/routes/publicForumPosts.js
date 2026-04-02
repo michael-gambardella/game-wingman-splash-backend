@@ -1907,6 +1907,216 @@ const SPLASH_PAGE_FORUMS = {
         forumId: "forum_1771956008043_e22go5ur8",
         title: "Mechanics & Strategies",
         gameTitle: "MLB Slugfest 2003"
+    },
+    returntomonkeyislandcharactertalk: {
+        forumId: "forum_1771957800855_2patgpct2",
+        title: "Characters & Story Talk",
+        gameTitle: "Return to Monkey Island"
+    },
+    metalgearrisingcharactersandstory: {
+        forumId: "forum_1771965901438_zpfxw542r",
+        title: "Characters & Story Talk",
+        gameTitle: "Metal Gear Rising: Revengeance"
+    },
+    spyroreignitedmechanics: {
+        forumId: "forum_1772024404340_dnen5ykxr",
+        title: "Mechanics & Strategies",
+        gameTitle: "Spyro Reignited Trilogy"
+    },
+    tenchubuildsloadouts: {
+        forumId: "forum_1772028000200_snw4763kq",
+        title: "Builds / Loadouts / Setups",
+        gameTitle: "Tenchu: Shadow Assassins"
+    },
+    shovelknightfixesworkarounds: {
+        forumId: "forum_1772038800088_srxfzt2ub",
+        title: "Fixes & Workarounds",
+        gameTitle: "Shovel Knight"
+    },
+    thechroniclesofriddickmods: {
+        forumId: "forum_1772042401091_jvs8qrcnh",
+        title: "Mods",
+        gameTitle: "The Chronicles of Riddick: Escape from Butcher Bay"
+    },
+    valheimmechanics: {
+        forumId: "forum_1772042405535_reu7zdfty",
+        title: "Mechanics & Strategies",
+        gameTitle: "Valheim"
+    },
+    subwaysurferstipsdiscoveries: {
+        forumId: "forum_1772052301481_lfadaif6c",
+        title: "Tips and Discoveries",
+        gameTitle: "Subway Surfers"
+    },
+    returntomonkeyislandmodinstallation: {
+        forumId: "forum_1772114400865_8fk2co4z6",
+        title: "Mod Installation & Compatibility",
+        gameTitle: "Return to Monkey Island"
+    },
+    zoneoftheenders2ndrunnertips: {
+        forumId: "forum_1772128800057_5mg05adau",
+        title: "Need Tips / Advice",
+        gameTitle: "Zone of the Enders: The 2nd Runner"
+    },
+    powerwashsimulatorgameplaytips: {
+        forumId: "forum_1772128809499_esmd30zqz",
+        title: "Gameplay Tips & Tech",
+        gameTitle: "PowerWash Simulator"
+    },
+    devilmaycry3charactersandstory: {
+        forumId: "forum_1772130600749_fcbxrvngq",
+        title: "Characters & Story Talk",
+        gameTitle: "Devil May Cry 3: Special Edition"
+    },
+    astroneeradvancedtech: {
+        forumId: "forum_1772138700033_ov8ragjh5",
+        title: "Advanced Techniques",
+        gameTitle: "Astroneer"
+    },
+    uncharted2gameplaytips: {
+        forumId: "forum_1772197205907_mteu49xqu",
+        title: "Gameplay Tips & Tech",
+        gameTitle: "Uncharted 2: Among Thieves"
+    },
+    returnoftheobradinnhottakes: {
+        forumId: "forum_1772200800803_52kk3twvt",
+        title: "Hot Takes & Opinions",
+        gameTitle: "Return of the Obra Dinn"
+    },
+    jetsetradiomechanics: {
+        forumId: "forum_1772211600060_b7ln1cygq",
+        title: "Mechanics & Strategies",
+        gameTitle: "Jet Set Radio"
+    },
+    residentevil7worldrecorddiscussion: {
+        forumId: "forum_1772215200057_pmftgphpy",
+        title: "World Record Discussion",
+        gameTitle: "Resident Evil 7: Biohazard"
+    },
+    left4deadworldrecorddiscussion: {
+        forumId: "forum_1772215209667_kdy8xoz1l",
+        title: "World Record Discussion",
+        gameTitle: "Left 4 Dead"
+    },
+    sakurawars2019buildssetups: {
+        forumId: "forum_1772225100076_g4y0alu1a",
+        title: "Builds / Loadouts / Setups",
+        gameTitle: "Sakura Wars (2019)"
+    },
+    residentevil7graphicsmods: {
+        forumId: "forum_1772283601365_ta1linepn",
+        title: "Graphics / Texture Mods",
+        gameTitle: "Resident Evil 7: Biohazard"
+    },
+    theelderscrolls5hottakes: {
+        forumId: "forum_1772283607100_eg7eidemw",
+        title: "Hot Takes & Opinions",
+        gameTitle: "The Elder Scrolls V: Skyrim"
+    },
+    castlevaniaorderofecclesiabeginnerquestions: {
+        forumId: "forum_1772287200089_28bmrhdst",
+        title: "Beginner Questions",
+        gameTitle: "Castlevania: Order of Ecclesia"
+    },
+    dragonquest5optimalroutes: {
+        forumId: "forum_1772301600036_d9v9h54se",
+        title: "Optimal Playthroughs & Routes",
+        gameTitle: "Dragon Quest V: Hand of the Heavenly Bride"
+    },
+    alienisolationbeginnerquestions: {
+        forumId: "forum_1772303400035_yl4maq5vs",
+        title: "Beginner Questions",
+        gameTitle: "Alien: Isolation"
+    },
+    mariogolfgameplayoverhaul: {
+        forumId: "forum_1772311502249_33p61x8dy",
+        title: "Gameplay Overhauls",
+        gameTitle: "Mario Golf"
+    },
+    arenaofvalorbuildssetups: {
+        forumId: "forum_1772370000052_6gh7z4yb5",
+        title: "Builds / Loadouts / Setups",
+        gameTitle: "Arena of Valor"
+    },
+    pokemonmysterydungeonexplorersofskybeginnerhelpthread: {
+        forumId: "forum_1772370005814_b4cjcaf0x",
+        title: "Beginner Help Thread",
+        gameTitle: "Pokemon Mystery Dungeon: Explorers of Sky"
+    },
+    eldenringstuckaskhere: {
+        forumId: "forum_1772388005588_slx49fn52",
+        title: "Stuck? Ask Here",
+        gameTitle: "Elden Ring"
+    },
+    papermariothousandyeardoorbeginnerhelpthread: {
+        forumId: "forum_1772389800046_g0siy6weh",
+        title: "Beginner Help Thread",
+        gameTitle: "Paper Mario: The Thousand Year Door"
+    },
+    riskofrain2pbprogressconsistency: {
+        forumId: "forum_1772456400047_xxkftqjfo",
+        title: "PB Progress & Consistency",
+        gameTitle: "Risk of Rain 2"
+    },
+    spidermanmilesmoralesbeginnerquestions: {
+        forumId: "forum_1772456406552_4l3p7hb1i",
+        title: "Beginner Questions",
+        gameTitle: "Marvel's Spider-Man: Miles Morales"
+    },
+    sinandpunishmentanypercentroute: {
+        forumId: "forum_1772460000037_86m3na0mr",
+        title: "Any% Route & Strats",
+        gameTitle: "Sin and Punishment"
+    },
+    masseffect3hottakes: {
+        forumId: "forum_1772474400785_pkh5sq70e",
+        title: "Hot Takes & Opinions",
+        gameTitle: "Mass Effect 3"
+    },
+    aplaguetalerequiempbprogressconsistency: {
+        forumId: "forum_1772484300029_i78hsa5dx",
+        title: "PB Progress & Consistency",
+        gameTitle: "A Plague Tale: Requiem"
+    },
+    supermario3dworldbowsersfuryadvancedtech: {
+        forumId: "forum_1772542800056_0675wf2l9",
+        title: "Advanced Techniques",
+        gameTitle: "Super Mario 3D World + Bowser's Fury"
+    },
+    sonicadventure2graphicsmods: {
+        forumId: "forum_1772542809255_vm3nmap1l",
+        title: "Graphics / Texture Mods",
+        gameTitle: "Sonic Adventure 2"
+    },
+    metagearrisingfixesworkarounds: {
+        forumId: "forum_1772560800050_zvzf7uuf4",
+        title: "Fixes & Workarounds",
+        gameTitle: "Metal Gear Rising: Revengeance"
+    },
+    supermarioworldgameplaytips: {
+        forumId: "forum_1772560807547_z4csyd7dr",
+        title: "Gameplay Tips & Tech",
+        gameTitle: "Super Mario World"
+    },
+    starfox64spoilers: {
+        forumId: "forum_1772562601369_cm7e1srgs",
+        title: "Spoilers and Discussion",
+        gameTitle: "Star Fox 64"
+    },
+    slaythespirefavmoments: {
+        forumId: "forum_1772570701013_zyt62vgz3",
+        title: "Favorite Moments",
+        gameTitle: "Slay the Spire"
+    },
+    oriandthewillofthewispsbuildsloadouts: {
+        forumId: "forum_1772629200049_irt071htw",
+        title: "Builds / Loadouts / Setups",
+        gameTitle: "Ori and the Will of the Wisps"
+    },
+    hatofulboyfriendworldrecord: {
+        forumId: "forum_1772629206190_5lzsphuiy",
+        title: "World Record Discussion",
+        gameTitle: "Hatoful Boyfriend"
     }
 };
 // Default forum (Xenoblade Chronicles 3) for backward compatibility
