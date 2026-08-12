@@ -1,12 +1,14 @@
 /**
  * Verification script to test Pro Access deadline logic
- * This script verifies that users signing up on or after August 1, 2026 04:00:00 UTC
- * (July 31, 2026 11:59:59.999 PM EDT) will NOT receive free Wingman Pro access
- * 
+ * This script derives its test cases from PRO_DEADLINE (utils/checkProAccess.ts) so it
+ * stays correct whenever the deadline changes, instead of relying on hardcoded date literals.
+ *
  * Run with: npx ts-node scripts/verify-pro-deadline.ts
  */
 
 import { checkProAccessEligibility, getProDeadline } from '../utils/checkProAccess';
+
+const ONE_DAY_MS = 24 * 60 * 60 * 1000;
 
 // Test cases
 console.log('='.repeat(60));
@@ -17,11 +19,15 @@ console.log(`Deadline: ${new Date(PRO_DEADLINE).toISOString()}`);
 console.log(`Deadline Timestamp: ${PRO_DEADLINE}`);
 console.log('');
 
-// Test 1: User signing up on July 31, 2026 at 11:59:59 PM EDT (03:59:59 UTC Aug 1) (should get Pro)
-const jul31_235959_edt = new Date('2026-08-01T03:59:59.999Z').getTime();
-const userId1 = `user-${jul31_235959_edt}-abc123`;
+const atDeadline = PRO_DEADLINE;
+const wellBeforeDeadline = PRO_DEADLINE - 17 * ONE_DAY_MS;
+const oneMsAfterDeadline = PRO_DEADLINE + 1;
+const oneDayAfterDeadline = PRO_DEADLINE + ONE_DAY_MS;
+
+// Test 1: User signing up exactly at the deadline (should get Pro)
+const userId1 = `user-${atDeadline}-abc123`;
 const result1 = checkProAccessEligibility(userId1, 100);
-console.log('Test 1: User signing up on July 31, 2026 11:59:59.999 PM EDT (Aug 1 03:59:59.999 UTC)');
+console.log(`Test 1: User signing up exactly at the deadline (${new Date(atDeadline).toISOString()})`);
 console.log(`  UserId: ${userId1}`);
 console.log(`  Position: 100`);
 console.log(`  Expected: true (within deadline and first 5000)`);
@@ -29,11 +35,10 @@ console.log(`  Result: ${result1}`);
 console.log(`  ✓ ${result1 === true ? 'PASS' : 'FAIL'}`);
 console.log('');
 
-// Test 2: User signing up on August 1, 2026 at 04:00:00 UTC (12:00:00 AM EDT) (should NOT get Pro)
-const aug1_040000 = new Date('2026-08-01T04:00:00.000Z').getTime();
-const userId2 = `user-${aug1_040000}-def456`;
+// Test 2: User signing up 1ms after the deadline (should NOT get Pro)
+const userId2 = `user-${oneMsAfterDeadline}-def456`;
 const result2 = checkProAccessEligibility(userId2, 100);
-console.log('Test 2: User signing up on August 1, 2026 04:00:00.000 UTC (12:00:00 AM EDT)');
+console.log(`Test 2: User signing up 1ms after the deadline (${new Date(oneMsAfterDeadline).toISOString()})`);
 console.log(`  UserId: ${userId2}`);
 console.log(`  Position: 100`);
 console.log(`  Expected: false (after deadline)`);
@@ -41,11 +46,10 @@ console.log(`  Result: ${result2}`);
 console.log(`  ✓ ${result2 === false ? 'PASS' : 'FAIL'}`);
 console.log('');
 
-// Test 3: User signing up on August 1, 2026 at 04:00:01 UTC (should NOT get Pro)
-const aug1_040001 = new Date('2026-08-01T04:00:01.000Z').getTime();
-const userId3 = `user-${aug1_040001}-ghi789`;
+// Test 3: User signing up a full day after the deadline (should NOT get Pro)
+const userId3 = `user-${oneDayAfterDeadline}-ghi789`;
 const result3 = checkProAccessEligibility(userId3, 100);
-console.log('Test 3: User signing up on August 1, 2026 04:00:01.000 UTC');
+console.log(`Test 3: User signing up 1 day after the deadline (${new Date(oneDayAfterDeadline).toISOString()})`);
 console.log(`  UserId: ${userId3}`);
 console.log(`  Position: 100`);
 console.log(`  Expected: false (after deadline)`);
@@ -53,10 +57,10 @@ console.log(`  Result: ${result3}`);
 console.log(`  ✓ ${result3 === false ? 'PASS' : 'FAIL'}`);
 console.log('');
 
-// Test 4: User signing up on July 31, 2026 but position > 5000 (should NOT get Pro)
-const userId4 = `user-${jul31_235959_edt}-jkl012`;
+// Test 4: User signing up before the deadline but position > 5000 (should NOT get Pro)
+const userId4 = `user-${atDeadline}-jkl012`;
 const result4 = checkProAccessEligibility(userId4, 5001);
-console.log('Test 4: User signing up on July 31, 2026 but position 5001');
+console.log('Test 4: User signing up at the deadline but position 5001');
 console.log(`  UserId: ${userId4}`);
 console.log(`  Position: 5001`);
 console.log(`  Expected: false (position > 5000)`);
@@ -64,10 +68,10 @@ console.log(`  Result: ${result4}`);
 console.log(`  ✓ ${result4 === false ? 'PASS' : 'FAIL'}`);
 console.log('');
 
-// Test 5: User signing up on July 31, 2026 at position 5000 (should get Pro - boundary)
-const userId5 = `user-${jul31_235959_edt}-mno345`;
+// Test 5: User signing up at the deadline at position 5000 (should get Pro - boundary)
+const userId5 = `user-${atDeadline}-mno345`;
 const result5 = checkProAccessEligibility(userId5, 5000);
-console.log('Test 5: User signing up on July 31, 2026 at position 5000 (boundary)');
+console.log('Test 5: User signing up at the deadline at position 5000 (boundary)');
 console.log(`  UserId: ${userId5}`);
 console.log(`  Position: 5000`);
 console.log(`  Expected: true (within deadline and exactly position 5000)`);
@@ -75,7 +79,7 @@ console.log(`  Result: ${result5}`);
 console.log(`  ✓ ${result5 === true ? 'PASS' : 'FAIL'}`);
 console.log('');
 
-// Test 6: User signing up exactly at deadline boundary (should get Pro)
+// Test 6: User signing up exactly at deadline timestamp (should get Pro)
 const userId6 = `user-${PRO_DEADLINE}-pqr678`;
 const result6 = checkProAccessEligibility(userId6, 100);
 console.log('Test 6: User signing up exactly at deadline timestamp');
@@ -97,11 +101,10 @@ console.log(`  Result: ${result7}`);
 console.log(`  ✓ ${result7 === false ? 'PASS' : 'FAIL'}`);
 console.log('');
 
-// Test 8: User signing up mid-July 2026 (should get Pro - well before deadline)
-const midJuly2026 = new Date('2026-07-15T12:00:00.000Z').getTime();
-const userId8 = `user-${midJuly2026}-vwx234`;
+// Test 8: User signing up well before the deadline (should get Pro)
+const userId8 = `user-${wellBeforeDeadline}-vwx234`;
 const result8 = checkProAccessEligibility(userId8, 100);
-console.log('Test 8: User signing up on July 15, 2026 at 12:00:00 UTC');
+console.log(`Test 8: User signing up well before the deadline (${new Date(wellBeforeDeadline).toISOString()})`);
 console.log(`  UserId: ${userId8}`);
 console.log(`  Position: 100`);
 console.log(`  Expected: true (well before deadline)`);
@@ -110,7 +113,7 @@ console.log(`  ✓ ${result8 === true ? 'PASS' : 'FAIL'}`);
 console.log('');
 
 // Test 9: User with null position (already approved) - should return false
-const userId9 = `user-${jul31_235959_edt}-nullpos`;
+const userId9 = `user-${atDeadline}-nullpos`;
 const result9 = checkProAccessEligibility(userId9, null);
 console.log('Test 9: User with null position (already approved)');
 console.log(`  UserId: ${userId9}`);
@@ -136,25 +139,24 @@ console.log('='.repeat(60));
 console.log('Summary');
 console.log('='.repeat(60));
 const allTests = [
-  result1,           // Test 1: July 31, 2026 11:59:59 PM EDT - should be true
-  !result2,          // Test 2: Aug 1, 2026 04:00:00 UTC - should be false
-  !result3,          // Test 3: Aug 1, 2026 04:00:01 UTC - should be false
+  result1,           // Test 1: At deadline - should be true
+  !result2,          // Test 2: 1ms after deadline - should be false
+  !result3,          // Test 3: 1 day after deadline - should be false
   !result4,          // Test 4: Position > 5000 - should be false
   result5,           // Test 5: Position 5000 boundary - should be true
   result6,           // Test 6: Exactly at deadline - should be true
-  !result7,         // Test 7: 1ms after deadline - should be false
-  result8,          // Test 8: July 15, 2026 - should be true
-  !result9,         // Test 9: Null position - should be false
-  !result10         // Test 10: Invalid userId - should be false
+  !result7,          // Test 7: 1ms after deadline - should be false
+  result8,           // Test 8: Well before deadline - should be true
+  !result9,          // Test 9: Null position - should be false
+  !result10          // Test 10: Invalid userId - should be false
 ];
 const passedTests = allTests.filter(r => r === true).length;
 const totalTests = allTests.length;
 console.log(`Tests Passed: ${passedTests}/${totalTests}`);
 if (passedTests === totalTests) {
   console.log('✓ All tests PASSED - Deadline logic is working correctly!');
-  console.log('✓ Users signing up on or after August 1, 2026 04:00:00 UTC (July 31, 2026 11:59:59.999 PM EDT) will NOT receive Pro access');
+  console.log(`✓ Users signing up after ${new Date(PRO_DEADLINE).toISOString()} will NOT receive Pro access`);
 } else {
   console.log('✗ Some tests FAILED - Please review the deadline logic');
 }
 console.log('='.repeat(60));
-
